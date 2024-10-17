@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Club Membership</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Section 1: File Upload -->
+    <section id="file-section">
+        <h2>File</h2>
+        <input type="file" id="file-input" accept=".txt">
+        <button id="load-file">Open File</button>
+    </section>
+
+    <!-- Section 2: Records -->
+    <section id="records-section">
+        <h2>Records</h2>
+        <pre id="records-display">No records loaded</pre>
+        <button id="print-records">Print Records</button>
+    </section>
+
+    <!-- Section 3: Enter Member Details -->
+    <section id="member-section">
+        <h2>Enter Member Details</h2>
+        <form id="member-form">
+            <label for="membership-number">Membership Number</label>
+            <input type="text" id="membership-number" required>
+
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" required>
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" required>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" required>
+
+            <label for="postcode">Postcode</label>
+            <input type="text" id="postcode" required>
+
+            <label for="gender">Gender</label>
+            <select id="gender" required>
+                <option value="M">M</option>
+                <option value="F">F</option>
+            </select>
+
+            <label for="join-date">Join Date</label>
+            <input type="date" id="join-date" required>
+
+            <label for="membership-type">Type of Membership</label>
+            <select id="membership-type" required>
+                <option value="F">Full</option>
+                <option value="S">Student</option>
+                <option value="T">Temporary</option>
+                <option value="B">Basic</option>
+            </select>
+
+            <label for="subscription-month">Subscription Due Month</label>
+            <select id="subscription-month" required>
+                <!-- Options for months -->
+                <option value="Jan">January</option>
+                <option value="Feb">February</option>
+                <option value="Feb">March</option>
+                <option value="Feb">April</option>
+                <option value="Feb"></option>
+                <option value="Feb">June</option>
+                <option value="Feb">July</option>
+                <option value="Feb">July</option>
+                <option value="Feb">August</option>
+                <option value="Feb">September</option>
+                <option value="Feb">October</option>
+                <option value="Feb">November</option>
+                <option value="Feb">December</option>
+                <!-- Add other months similarly -->
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
