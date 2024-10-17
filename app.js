@@ -1,3 +1,23 @@
+const navButtons = document.querySelectorAll('.nav-btn');
+const sections = document.querySelectorAll('.section');
+
+navButtons.forEach(button => {
+    button.addEventListener('click', function () {
+        const target = this.getAttribute('data-target');
+
+        sections.forEach(section => {
+            section.classList.remove('visible');
+            section.classList.add('hidden');
+        });
+
+        const targetSection = document.getElementById(target);
+        targetSection.classList.remove('hidden');
+        targetSection.classList.add('visible');
+    });
+});
+
+document.getElementById('file-section').classList.add('visible');
+
 document.getElementById('load-file').addEventListener('click', function() {
     const fileInput = document.getElementById('file-input');
     const file = fileInput.files[0];
